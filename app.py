@@ -101,7 +101,7 @@ def process_video_stream(source, model, confidence):
         helmet_warning = effective_person_count > helmet_count
         vest_warning = effective_person_count > vest_count
         
-        st_frame.image(annotated_frame, channels="BGR", use_column_width=True)
+        st_frame.image(annotated_frame, channels="BGR", use_container_width=True)
 
         with st_stats:
             st.subheader("📊 Statistik Real-Time")
@@ -195,7 +195,7 @@ def main():
             # Layout baru untuk menampilkan gambar dan statistik
             col1, col2 = st.columns([3, 1])
             with col1:
-                st.image(annotated_image, caption="✅ Hasil Deteksi", channels="BGR", use_column_width=True)
+                st.image(annotated_image, caption="✅ Hasil Deteksi", channels="BGR", use_container_width=True)
             
             with col2:
                 st.subheader("📊 Statistik Gambar")
