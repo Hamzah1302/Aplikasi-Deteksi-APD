@@ -1,13 +1,3 @@
-# ==============================================================================
-# APLIKASI STREAMLIT UNTUK DETEKSI ALAT PELINDUNG DIRI (APD) - SIAP DEPLOY
-# ==============================================================================
-# Cara Menjalankan:
-# 1. Simpan kode ini sebagai file `app.py`.
-# 2. Letakkan file model Anda (`best.pt`) di dalam folder yang SAMA dengan `app.py`.
-# 3. Jalankan dari terminal:
-#    streamlit run app.py
-# ==============================================================================
-
 import streamlit as st
 from ultralytics import YOLO
 import cv2
